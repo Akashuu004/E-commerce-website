@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer';
 import Hero from '@/components/home/Hero';
 import FeaturedProducts from '@/components/home/FeaturedProducts';
 import { Separator } from '@/components/ui/separator';
+import { Button } from '@/components/ui/button';
 
 const Index = () => {
   return (
