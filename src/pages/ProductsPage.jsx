@@ -23,7 +23,7 @@ const ProductsPage = () => {
   // State for filters
   const [searchQuery, setSearchQuery] = useState(initialSearch);
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
-  const [priceRange, setPriceRange] = useState<[number, number]>([initialMinPrice, initialMaxPrice]);
+  const [priceRange, setPriceRange] = useState([initialMinPrice, initialMaxPrice]);
   const [filteredProducts, setFilteredProducts] = useState(products);
   
   // Update filters when URL params change
@@ -73,15 +73,15 @@ const ProductsPage = () => {
     }
   }, [selectedCategory, searchQuery, priceRange, navigate]);
   
-  const handleCategoryChange = (category: string) => {
+  const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
   
-  const handleSearch = (query: string) => {
+  const handleSearch = (query) => {
     setSearchQuery(query);
   };
   
-  const handlePriceChange = (values: number[]) => {
+  const handlePriceChange = (values) => {
     setPriceRange([values[0], values[1]]);
   };
   

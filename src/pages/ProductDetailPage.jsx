@@ -11,7 +11,7 @@ import { ShoppingCart, Heart, Minus, Plus, ChevronLeft, Star, Truck, RotateCcw, 
 import ProductCard from '@/components/products/ProductCard';
 
 const ProductDetailPage = () => {
-  const { id } = useParams<{ id: string }>();
+  const { id } = useParams();
   const navigate = useNavigate();
   const product = getProductById(id || '');
   const { addToCart } = useCart();
