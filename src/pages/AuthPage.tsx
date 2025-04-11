@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import AuthForm from '@/components/auth/AuthForm';
+import { Button } from '@/components/ui/button';
 
 const AuthPage = () => {
   return (
